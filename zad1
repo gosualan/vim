@@ -1,0 +1,13 @@
+git checkout -b nowyBranch && \
+git add plik && \
+git commit -m "" && \
+git push && \
+git checkout głównyBranch && \
+git merge nowyBranch && \
+git checkout nowyBranch && \
+skrypt.sh --date && \
+echo "*log*" > .gitignore && \
+skrypt.sh --logs && \
+skrypt.sh --logs 30 && \
+skrypt.sh --help && \
+git tag v1.0
